@@ -15,7 +15,6 @@ job "flask_image_thumbnail" {
 
       port "http" {
         to = 5015
-        static = 5015
       }
     }
   task "app" {
