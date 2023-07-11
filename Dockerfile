@@ -3,5 +3,4 @@ WORKDIR /app
 COPY . /app
 RUN pip install -r requirements.txt
 ENV FLASK_APP=app.py
-EXPOSE 5015
 ENTRYPOINT ["flask", "run", "-h", "0.0.0.0", "-p", "5015"]
